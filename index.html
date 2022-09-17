@@ -22,177 +22,193 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-               * {
-                 margin: 0;
-                 padding: 0;
-                 box-sizing: border-box;
-               }
-               body {
-                 font-family: "Kumbh sans";
-               }
-               h4 {
-                 color: hsl(25, 100%, 70%);
-                 margin-bottom: 24px;
-                 font-weight: 700;
-               }
-               .attribution {
-                 font-size: 11px;
-                 text-align: center;
-               }
-               .attribution a {
-                 color: hsl(228, 45%, 44%);
-               }
-               .container {
-                 width: 950px;
-                 margin: 0 auto;
-                 display: grid;
-                 grid-template-columns: 1fr 1fr;
-                 margin-bottom: 24px;
-               }
-               .nav-bar {
-                 grid-column: 1/-1;
-                 padding: 12px 0;
-                 border-bottom: 1px solid hsla(218, 12%, 13%, 0.427);
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Kumbh sans";
+      }
+      h4 {
+        color: hsl(25, 100%, 70%);
+        margin-bottom: 24px;
+        font-weight: 700;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .container {
+        width: 950px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 24px;
+      }
+      .nav-bar {
+        grid-column: 1/-1;
+        padding: 12px 0;
+        border-bottom: 1px solid hsla(218, 12%, 13%, 0.427);
 
-                 display: flex;
-                 align-items: center;
-                 justify-content: space-between;
-                 margin-bottom: 24px;
-               }
-               .icon {
-                 width: 24px;
-                 height: 24px;
-                 stroke: #000;
-               }
-               .logo-nav {
-                 display: flex;
-                 align-items: center;
-                 justify-content: center;
-                 gap: 66px;
-               }
-               .navigation {
-                 display: flex;
-                 gap: 24px;
-               }
-               .right-nav {
-                 display: flex;
-                 gap: 24px;
-                 justify-content: center;
-                 align-items: center;
-               }
-               .profile-picture {
-                 border-radius: 50%;
-               }
-               .avatar {
-                 width: 44px;
-                 height: 44px;
-               }
-               .product-page {
-                 display: grid;
-                 grid-template-columns: 450px 450px;
-                 width: 950px;
-                 justify-content: center;
-                 align-items: center;
-                 gap: 40px;
-               }
-               .product-picture {
-                 width: 450px;
-                 height: 450px;
-                 border-radius: 8px;
-                 margin-bottom: 24px;
-               }
-               .product-description {
-                 width: 450px;
-                 height: 450px;
-                 padding: 40px;
-               }
-               h3 {
-                 font-size: 24px;
-                 letter-spacing: 1px;
-                 font-weight: 700;
-               }
-               .nav-list:link {
-                 text-decoration: none;
-                 font-size: 16px;
-                 font-weight: 600;
-                 letter-spacing: 1px;
-                 color: hsl(219, 9%, 45%);
-               }
-               .nav-list:hover,
-               .nav-list:visited {
-                 text-decoration: none;
-                 color: hsl(220, 14%, 75%)
-               }
-               h1 {
-                 color: hsl(219, 9%, 45%)
-                 margin-bottom: 32px;
-                 font-size: 40px;
-               }
-               .description {
-                 margin-bottom: 32px;
-                 color: hsl(219, 9%, 45%);
-               }
-               .price-section {
-                 display: flex;
-                 align-items: center;
-                 margin-bottom: 32px;
-                 gap: 24px;
-               }
-               .btn {
-                 padding: 15px 85px;
-                 background-color: hsl(26, 100%, 55%);
-                 border: none;
-                 border-radius: 8px;
-                 color: hsl(0, 0%, 100%);
-                 display: flex;
-                 justify-content: center;
-                 align-items: center;
-                 gap: 10px;
-                 font-size: 16px;
-                 font-weight: 500;
-               }
-               .buy-sec {
-                 display: flex;
-                 align-items: center;
-                 justify-content: center;
-                 justify-content: space-between;
-               }
-               .price {
-                 font-weight: 700;
-                 font-size: 24px;
-               }
-               .discount {
-                 background-color: hsl(25, 100%, 94%);
-                 padding: 3px 10px;
-                 color: hsl(26, 100%, 55%);
-                 font-weight: 700;
-               }
-               .btn-icon{
-                 width: 24px;
-                 height: 24px;
-                 stroke: #ffffff
-               }
-               .tumbnails{
-                 width: 90px;
-                 height: 90px;
-                 border-radius: 8px;
-               }
-               .products-images{
-         grid-column: -3;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+      }
+      .icon {
+        width: 24px;
+        height: 24px;
+        stroke: #000;
+      }
+      .logo-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 66px;
+      }
+      .navigation {
+        display: flex;
+        gap: 24px;
+      }
+      .right-nav {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+      }
+      .profile-picture {
+        border-radius: 50%;
+      }
+      .avatar {
+        width: 44px;
+        height: 44px;
+      }
+      .product-page {
+        display: grid;
+        grid-template-columns: 450px 450px;
+        width: 950px;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+      }
+      .product-picture {
+        width: 450px;
+        height: 450px;
+        border-radius: 8px;
+        margin-bottom: 24px;
+      }
+      .product-description {
+        width: 450px;
+        height: 450px;
+        padding: 40px;
+      }
+      h3 {
+        font-size: 24px;
+        letter-spacing: 1px;
+        font-weight: 700;
+      }
+      .nav-list:link {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: hsl(219, 9%, 45%);
+      }
+      .nav-list:hover,
+      .nav-list:visited {
+        text-decoration: none;
+        color: hsl(220, 14%, 75%);
+      }
+      h1 {
+        color: hsl(220, 13%, 13%);
+        margin-bottom: 24px;
+        font-size: 40px;
+      }
+      .description {
+        margin-bottom: 32px;
+        color: hsl(219, 9%, 45%);
+      }
+      .price-section {
+        display: flex;
+        align-items: center;
+        margin-bottom: 14px;
+        gap: 24px;
+      }
+      .btn {
+        padding: 15px 85px;
+        background-color: hsl(26, 100%, 55%);
+        border: none;
+        border-radius: 8px;
+        color: hsl(0, 0%, 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .buy-sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+      }
+      .price {
+        font-weight: 700;
+        font-size: 24px;
+      }
+      .discount {
+        background-color: hsl(25, 100%, 94%);
+        padding: 3px 10px;
+        color: hsl(26, 100%, 55%);
+        font-weight: 700;
+      }
+      .btn-icon {
+        width: 24px;
+        height: 24px;
+        stroke: #ffffff;
+      }
+      .tumbnails {
+        width: 90px;
+        height: 90px;
+        border-radius: 8px;
+      }
+      .products-images {
+        grid-column: -3;
 
-      margin:0 38px;
-      display: flex;
-      gap: 32px;
-      align-items: center;
-      justify-content: center;
-      width:384px
-
-               }
-               .picture-tumbnail{
-                 display: grid;
-                 align-items: center;
-                 justify-content: center;
-               }
+        margin: 0 38px;
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        justify-content: center;
+        width: 384px;
+      }
+      .picture-tumbnail {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+      }
+      .quantity {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(25, 100%, 94%);
+        gap: 20px;
+        padding: 5px;
+      }
+      .qua {
+        color: hsl(26, 100%, 55%);
+        font-weight: 700;
+        font-size: 18px;
+      }
+      .old-price {
+        text-decoration: line-through;
+        margin-bottom: 32px;
+      }
     </style>
   </head>
   <body>
@@ -255,9 +271,16 @@
             <div class="price">$125.00</div>
             <div class="discount">50%</div>
           </div>
-          <span>$250.00</span>
+          <div class="old-price">
+            <span>$250.00</span>
+          </div>
           <div class="buy-sec">
-            0
+            <div class="quantity">
+              <p class="qua">-</p>
+              <p class="qua">0</p>
+              <p class="qua">+</p>
+            </div>
+
             <button class="btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
