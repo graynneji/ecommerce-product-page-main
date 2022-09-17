@@ -11,30 +11,204 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | E-commerce product page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+               * {
+                 margin: 0;
+                 padding: 0;
+                 box-sizing: border-box;
+               }
+               body {
+                 font-family: "Kumbh sans";
+               }
+               h4 {
+                 color: hsl(25, 100%, 70%);
+                 margin-bottom: 24px;
+                 font-weight: 700;
+               }
+               .attribution {
+                 font-size: 11px;
+                 text-align: center;
+               }
+               .attribution a {
+                 color: hsl(228, 45%, 44%);
+               }
+               .container {
+                 width: 950px;
+                 margin: 0 auto;
+                 display: grid;
+                 grid-template-columns: 1fr 1fr;
+                 margin-bottom: 24px;
+               }
+               .nav-bar {
+                 grid-column: 1/-1;
+                 padding: 12px 0;
+                 border-bottom: 1px solid hsla(218, 12%, 13%, 0.427);
+
+                 display: flex;
+                 align-items: center;
+                 justify-content: space-between;
+                 margin-bottom: 24px;
+               }
+               .icon {
+                 width: 24px;
+                 height: 24px;
+                 stroke: #000;
+               }
+               .logo-nav {
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 gap: 66px;
+               }
+               .navigation {
+                 display: flex;
+                 gap: 24px;
+               }
+               .right-nav {
+                 display: flex;
+                 gap: 24px;
+                 justify-content: center;
+                 align-items: center;
+               }
+               .profile-picture {
+                 border-radius: 50%;
+               }
+               .avatar {
+                 width: 44px;
+                 height: 44px;
+               }
+               .product-page {
+                 display: grid;
+                 grid-template-columns: 450px 450px;
+                 width: 950px;
+                 justify-content: center;
+                 align-items: center;
+                 gap: 40px;
+               }
+               .product-picture {
+                 width: 450px;
+                 height: 450px;
+                 border-radius: 8px;
+                 margin-bottom: 24px;
+               }
+               .product-description {
+                 width: 450px;
+                 height: 450px;
+                 padding: 40px;
+               }
+               h3 {
+                 font-size: 24px;
+                 letter-spacing: 1px;
+                 font-weight: 700;
+               }
+               .nav-list:link {
+                 text-decoration: none;
+                 font-size: 16px;
+                 font-weight: 600;
+                 letter-spacing: 1px;
+                 color: hsl(219, 9%, 45%);
+               }
+               .nav-list:hover,
+               .nav-list:visited {
+                 text-decoration: none;
+                 color: hsl(220, 14%, 75%)
+               }
+               h1 {
+                 color: hsl(219, 9%, 45%)
+                 margin-bottom: 32px;
+                 font-size: 40px;
+               }
+               .description {
+                 margin-bottom: 32px;
+                 color: hsl(219, 9%, 45%);
+               }
+               .price-section {
+                 display: flex;
+                 align-items: center;
+                 margin-bottom: 32px;
+                 gap: 24px;
+               }
+               .btn {
+                 padding: 15px 85px;
+                 background-color: hsl(26, 100%, 55%);
+                 border: none;
+                 border-radius: 8px;
+                 color: hsl(0, 0%, 100%);
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 gap: 10px;
+                 font-size: 16px;
+                 font-weight: 500;
+               }
+               .buy-sec {
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 justify-content: space-between;
+               }
+               .price {
+                 font-weight: 700;
+                 font-size: 24px;
+               }
+               .discount {
+                 background-color: hsl(25, 100%, 94%);
+                 padding: 3px 10px;
+                 color: hsl(26, 100%, 55%);
+                 font-weight: 700;
+               }
+               .btn-icon{
+                 width: 24px;
+                 height: 24px;
+                 stroke: #ffffff
+               }
+               .tumbnails{
+                 width: 90px;
+                 height: 90px;
+                 border-radius: 8px;
+               }
+               .products-images{
+         grid-column: -3;
+
+      margin:0 38px;
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      justify-content: center;
+      width:384px
+
+               }
+               .picture-tumbnail{
+                 display: grid;
+                 align-items: center;
+                 justify-content: center;
+               }
     </style>
   </head>
   <body>
     <div class="container">
       <nav class="nav-bar">
-        <div class="Logo">sneakers</div>
-        <div class="navigation">
-          <a href="#" class="nav-list">Collections</a>
-          <a href="#" class="nav-list">Men</a>
-          <a href="#" class="nav-list">Women</a>
-          <a href="#" class="nav-list">About</a>
-          <a href="#" class="nav-list">Contact</a>
+        <div class="logo-nav">
+          <div class="Logo">
+            <h3>sneakers</h3>
+          </div>
+          <div class="navigation">
+            <a href="#" class="nav-list">Collections</a>
+            <a href="#" class="nav-list">Men</a>
+            <a href="#" class="nav-list">Women</a>
+            <a href="#" class="nav-list">About</a>
+            <a href="#" class="nav-list">Contact</a>
+          </div>
         </div>
         <div class="right-nav">
           <svg
@@ -43,7 +217,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6"
+            class="icon"
           >
             <path
               stroke-linecap="round"
@@ -51,28 +225,87 @@
               d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
             />
           </svg>
-          <div class="profile-picure">
-            <img src="images/image-avatar.png" alt="Profile picture" />
+          <div class="profile-picture">
+            <img
+              src="images/image-avatar.png"
+              alt="Profile picture"
+              class="avatar"
+            />
           </div>
         </div>
       </nav>
       <main class="product-page">
-        <img
-          src="images/image-product-1.jpg"
-          alt="Product picture"
-          class="product-picture"
-        />
+        <div class="picture-tumbnail">
+          <img
+            src="images/image-product-1.jpg"
+            alt="Product picture"
+            class="product-picture"
+          />
+        </div>
         <div class="product-description">
-          Sneaker Company Fall Limited Edition Sneakers These low-profile
-          sneakers are your perfect casual wear companion. Featuring a durable
-          rubber outer sole, they’ll withstand everything the weather can offer.
-          <div class="price">$125.00 50% $250.00</div>
+          <h4>Sneaker Company</h4>
+
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p class="description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price-section">
+            <div class="price">$125.00</div>
+            <div class="discount">50%</div>
+          </div>
+          <span>$250.00</span>
           <div class="buy-sec">
             0
-            <button class="btn">Add to cart</button>
+            <button class="btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="btn-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+              Add to cart
+            </button>
           </div>
         </div>
       </main>
+      <div class="products-images">
+        <div>
+          <img
+            src="images/image-product-1-thumbnail.jpg"
+            alt="Product picture"
+            class="tumbnails"
+          />
+        </div>
+        <div>
+          <img
+            src="images/image-product-2-thumbnail.jpg"
+            alt="Product picture"
+            class="tumbnails"
+          />
+        </div>
+        <div>
+          <img
+            src="images/image-product-3-thumbnail.jpg"
+            alt="Product picture"
+            class="tumbnails"
+          />
+        </div>
+        <img
+          src="images/image-product-4-thumbnail.jpg"
+          alt="Product picture"
+          class="tumbnails"
+        />
+      </div>
     </div>
     <div class="attribution">
       Challenge by
